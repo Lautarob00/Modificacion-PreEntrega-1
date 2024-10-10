@@ -1,4 +1,4 @@
-/*--- LE PREGUNTO AL USUARIO SU EDAD PARA INGRESAR AL SITIO WEB ---*/
+/*--- LE CONSULTO AL USUARIO SU EDAD PARA INGRESAR AL SITIO WEB ---*/
 
 function verificarEdad(){
 let edad = parseInt( prompt ("Ingrese su edad para verificacion")); 
