@@ -1,6 +1,6 @@
 /*--- LE CONSULTO AL USUARIO SU EDAD PARA INGRESAR AL SITIO WEB ---*/
 
-function verificarEdad(){
+/*function verificarEdad(){
 let edad = parseInt( prompt ("Ingrese su edad para verificacion")); 
 
 if (edad >= 18){
@@ -11,12 +11,12 @@ if (edad >= 18){
 }
 }
 
-verificarEdad();
+verificarEdad();*/
 
 
 /*--- AL MOMENTO DE DARLE CLICK A "MAS INFORMACION", ME LLEVA A OTRO FORMULARIO PARA COMPLETAR QUE TRATA SOBRE LOS HABITOS DE CADA PERSONA ---*/
 
-let codigo;
+/*let codigo;
 
 let intentos = 0;
 const MAXIMOS_INTENTOS = 3;
@@ -36,12 +36,12 @@ const MAXIMOS_INTENTOS = 3;
         }
 
 
-    }while(true)
+    }while(true)*/
 
 
 /*--- A TRAVES DEL FORMULARIO DE CONTACTO, LE CONSULTO NOMBRE COMPLETO, NRO DE DOCUMENTO Y EMAIL AL USUARIO (OPERADOR LOGICO AND & OR) ---*/
 
-function completarDatos(){
+/*function completarDatos(){
 let nombreCompleto = "Lautaro Benitez";
 let email = "gmail";
 let documento = 42;
@@ -53,46 +53,50 @@ if (nombreCompleto === "Lautaro Benitez"  &&  email === "gmail"   ||  documento 
 } 
 }
 
-completarDatos();
+completarDatos();*/
 
 
 /*--- DESBLOQUEA DECADAS DE PROGRESO DE PERSONAL EN SOLO 12 SEMANAS. EN ESTE PUNTO, TENGO PENSADO ARMAR UN CUESTIONARIO INICIAL EN DONDE REALIZO EL CALCULO DE CALORIAS (EXACTAS) NECESARIAS QUE NECESITA EL SER HUMANO PARA VIVIR. ES UNA PREGUNTA FRECUENTE QUE TIENE LA GENTE (SABER EL CALCULO DE SU INGESTA CALORICA DIARIA) ---*/
 
-function calculoCalorias(){
-let peso = parseInt( prompt ("Ingresa tu peso corporal"));
+/*function calculoCalorias(){
+
+let peso = parseInt( prompt("Ingresa tu peso corporal"));
 const NUMERO_OBLIGATORIO = 22;
-let actividad = parseInt ( prompt ("Agrega tu actividad, sedentario / activo / muy activo"));
 
 let aproximacionCalorias = peso * NUMERO_OBLIGATORIO;
 
-if (peso == 70){
-    console.log ("el resultado es"+ aproximacionCalorias);
+let actividad = prompt ("Selecciona tu nivel de actividad: sedentario / activo / muy activo").toLowerCase();
+let factorActividad;
+
+switch (actividad){
+    case "sedentario":
+        factorActividad = 1.35;
+        break;
+
+    case "activo":
+        factorActividad = 1.55;
+        break;
+
+    case "muy activo":
+        factorActividad = 1.75;
+        break;
+        
+        default:
+        alert("Nivel de actividad no reconocido");
+        
+return;
 }
 
-let sedentario = 1.35;
-let activo = 1.55;
-let muyActivo = 1.75;
+let caloriasTotales = aproximacionCalorias * factorActividad;
 
-if (aproximacionCalorias == 1540){
-    console.log ("en total tus calorias diarias son"+ aproximacionCalorias * sedentario);
-    alert("Al ser una persona sedentaria, tus calorias diarias totales son: "+ aproximacionCalorias * sedentario)
-}
-if(aproximacionCalorias == 1540){
-    console.log ("en total tus calorias diarias son"+ aproximacionCalorias * activo);
-    alert("Al ser una persona activa, tus calorias diarias totales son: "+ aproximacionCalorias * activo)
-}
-if(aproximacionCalorias == 1540){
-    console.log ("en total tus calorias diarias son"+ aproximacionCalorias * muyActivo);
-    alert("Al ser una persona muy activa, tus calorias diarias totales son: "+ aproximacionCalorias *muyActivo)
-}
+console.log("Tus calorias diarias son", +caloriasTotales);
 }
 
-calculoCalorias();
+calculoCalorias();*/
 
+/*--- DESBLOQUEA DECADAS DE PROGRESO PERSONAL EN SOLO 12 SEMANAS. NUEVAMENTE, EN ESTE PUNTO MI IDEA ES REALIZAR UN DESCUENTO DEL 10% A ESTUDIANTES UNIVERSITARIOS QUE SE ENCUENTRAN EN ESE ESTANCAMIENTO ADOLESCENTE EN DONDE NO ENCUENTRAN SU PROPOSITO DE VIDA. POR ESO EL DESCUENTO, PARA INCENTIVARLOS A ENTRAR AL PROGRAMA Y PARA QUE PUEDAN CAMBIAR SU MANERA DE VIVIR CUANTO ANTES ---*/
 
-/*--- DESBLOQUEA DECADAS DE PROGRESO PERSONAL EN SOLO 12 SEMANAS. NUEVAMENTE, EN ESTE PUNTO MI IDEA REALIZAR UN DESCUENTO DEL 10% A ESTUDIANTES UNIVERSITARIOS QUE SE ENCUENTRAN EN ESE ESTANCAMIENTO ADOLESCENTE EN DONDE NO ENCUENTRAN SU PROPOSITO DE VIDA. POR ESO EL DESCUENTO, PARA INCENTIVARLOS A ENTRAR AL PROGRAMA Y PARA QUE PUEDAN CAMBIAR SU MANERA DE VIVIR CUANTO ANTES ---*/
-
-function calcular (montoInicial){
+/*function calcular (montoInicial){
     let descuentoEstudiantil = 0.1;
 
     function calcularDescuento(){
@@ -106,4 +110,44 @@ function calcular (montoInicial){
     return totalDescuento;
 }
 
-console.log(calcular(10000))
+console.log(calcular(10000))*/
+
+
+/*--- EN LA PARTE DE SERVICIO, OFRECEMOS 3 TIPOS DE PLANES DISTINTOS PARA QUIENES QUIEREN TRANSFORMAR SUS HABITOS Y LOGRAR NUEVOS OBJETIVOS. AQUI DESCRIBO LOS PLANES QUE SON UTILIZADOS COMO OBJETOS (SON LOS PRODUCTOS A VENDER) ---*/
+
+/*function Plan(entrenamiento, objetivo, precio){
+    this.entrenamiento = entrenamiento;
+    this.objetivo = objetivo;
+    this.precio = precio;
+    }
+
+}
+
+let plan1 = new Plan('individual','aprender primeros terminos',40000)
+let plan2 = new Plan('grupal','nutricional y fisico',70000)
+let plan3 = new Plan('entrenador personal','mental y fisico',105000)
+console.log(plan1.info());
+console.log(plan2);
+console.log(plan3);*/
+
+/*--- SIGUIENDO CON EL CASO DE ARRIBA, ESCRIBO LO MISMO PERO CON ARRAYS ---*/
+
+let planUno = ["plan individual", "aprender primeros terminos", 40000];
+let planDos = ["plan grupal", "nutricional y grupal", 70000];
+let planTres = ["entrenador personal", "mental y fisico", 105000];
+
+/*--- Preguntar a Euge como declarar los 3 planes a la vez en la variable (Let pasoAString = (" ")) para que me puedan aparecer en un solo llamado del console.log ---*/
+
+let pasoAString = planUno.join(" ");
+
+console.log(pasoAString)
+
+/*--- EN LA PARTE DE SERVICIO, EXPRESO LAS CARACTERISTICAS DE CADA PLAN EN ARRAYS. LOS UNO PARA QUE APAREZCAN TODOS Y EL CLIENTE PUEDA VER LA INFORMACION DE CADA UNO ---*/
+
+/*let planUno = ["individual", "se aprenden primeros terminos", "valor de 40000"]
+let planDos = ["grupal", "objetivo nutricional y grupal", "valor de 70000"]
+let planTres = ["incluye entrenador personal", "objetivo mental y fisico", "valor de 105000"]
+
+let combinarPlanes = planUno.concat(planDos,planTres)
+
+console.log(combinarPlanes);*/
