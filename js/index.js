@@ -130,7 +130,7 @@ console.log(plan1.info());
 console.log(plan2);
 console.log(plan3);*/
 
-/*--- SIGUIENDO CON EL CASO DE ARRIBA, ESCRIBO LO MISMO PERO CON ARRAYS ---*/
+/*--- SIGUIENDO CON EL CASO DE ARRIBA (PARTE DE SERVICIO), ESCRIBO LO MISMO PERO CON ARRAYS ---*/
 
 let planUno = ["plan individual", "aprender primeros terminos", 40000];
 let planDos = ["plan grupal", "nutricional y grupal", 70000];
