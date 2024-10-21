@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="focus-in-expand">Impulso Mente Cuerpo</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/servicio.html">Servicio</a></li>
+                    <li><a href="../pages/formularios.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="seccion-tabla">
+            <article class="container-tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actividad</th><th>Descripcion</th><th>Numero</th>
+                    </tr>
+                </thead>
+
+                <tr class="enmarcado">
+                    <td>Sedentario</td><td>1 dia a la semana</td><td>1.35*</td>
+                </tr>
+                <tr class="enmarcado">
+                    <td>Activo</td><td>3 dias por semana</td><td>1.55*</td>
+                </tr>
+                <tr class="enmarcado">
+                    <td>Muy Activo</td><td>5 dias por semana</td><td>1.75*</td>
+                </tr>
+            </table>
+            </article>
+            <article class="container">
+                <form action="#">
+                    <h2 class="titulo-form">Cuestionario</h2>
+                    <div class="info-usuario">
+                        <div class="input-usuario">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="input-usuario">
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="input-usuario">
+                            <label for="Altura">Altura</label>
+                            <input type="text" name="Altura" id="Altura" placeholder="Ingrese su altura">
+                        </div>
+                        <div class="input-usuario">
+                            <label for="Peso">Peso</label>
+                            <input type="number" name="Peso" id="Peso" placeholder="Ingrese su peso">
+                        </div>
+                        <div class="input-usuario">
+                            <label for="Actividad">Actividad</label>
+                            <input type="text" name="Actividad" id="Actividad" placeholder="Ingresar actividad correspondiente">
+                        </div>
+                        <div class="input-usuario">
+                            <label for="Confirmar Actividad">Confirmar Actividad</label>
+                            <input type="number" name="Confirmar Actividad" id="confirmarActividad" placeholder="Confirmar actividad en numero">
+                        </div>
+                    </div>
+                    <div class="boton-enviar-btn">
+                        <input type="submit" value="Registrarse">
+                    </div>
+                </form>
+            </article>
+        </section>
+        <section class="formulario-contacto">
+            <article class="container-contacto">
+                <form action="">
+                <h2 class="titulo-contacto">Envianos tu consulta</h2>
+                    <div class="info-persona">
+                        <div class="input-persona">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" name="Nombre" id="Nombre" placeholder="Tu Nombre">
+                        </div>
+                        <div class="input-persona">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email" placeholder="Email">
+                        </div>
+                        <div class="input-persona">
+                            <label for="Celular">Celular</label>
+                            <input type="number" name="Celular" id="Celular" placeholder="Celular">
+                        </div>
+                        <div class="input-persona">
+                            <label for="Codigo">Codigo</label>
+                            <input type="number" name="Codigo" id="Codigo" placeholder="Tu Codigo">
+                        </div>
+                    </div>
+                    <div class="escribir-mensaje">
+                        <textarea name="Mensaje" id="Mensaje" placeholder=" "></textarea>
+                    </div>
+                    <div class="enviar-mensaje">
+                        <input type="submit" value="Enviar Consulta">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="tracking-in-expand-fwd-top">
+        <h2>Impulso Mente Cuerpo</h2>
+        <ul id="iconos">
+            <li><img src="../assets/Logo Facebook.png" alt="Logo Facebook"></li>
+            <li><img src="../assets/Logo Gmail.png" alt="Logo Gmail"></li>
+            <li><img src="../assets/Logo Twitter.png" alt="Logo Twitter"></li>
+        </ul>
+        <p>Copyright 2024 - Mind Body Boost | Todos los derechos reservados </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

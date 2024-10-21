@@ -684,3 +684,180 @@ ul#verificacion img {
     font-weight: bold;
     padding: 10px;
 }
+
+
+/*--- FORMULARIOS ---*/
+.seccion-tabla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.container-tabla {
+    width: 550px;
+    margin: 50px;
+}
+table {
+    background-color: #181C14;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.enmarcado:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+th, td {
+    padding: 20px;
+    color: white;
+}
+td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+thead {
+    background-color: yellowgreen;
+    border-bottom: solid 5px black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.container {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 5px;
+}
+.titulo-form {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.info-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+.input-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.input-usuario label {
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.info-usuario input {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid yellowgreen;
+    padding: 0 10px;
+}
+.boton-enviar-btn {
+    margin-top: 20px;
+}
+.boton-enviar-btn input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: yellowgreen;
+}
+.boton-enviar-btn input:hover {
+    cursor: pointer;
+    color: black;
+    background-color: greenyellow;
+}
+
+.formulario-contacto {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.container-contacto {
+    width: 100%;
+    width: 750px;
+    margin: auto;
+    border-radius: 5px;
+}
+.titulo-contacto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.info-persona {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input-persona {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.input-persona label {
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.info-persona input {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid yellowgreen;
+    padding: 0 10px;
+}
+.escribir-mensaje {
+    padding: 10;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.escribir-mensaje textarea {
+    background-color: #120e0e;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 300px;
+}
+.enviar-mensaje {
+    padding: 10px;
+}
+.enviar-mensaje input {
+    width: 200px;
+    font-size: 16px;
+    padding: 10px;
+}
+.enviar-mensaje input:hover {
+    cursor: pointer;
+    background-color: lawngreen;
+    color: black;
+}
