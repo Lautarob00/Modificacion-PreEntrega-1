@@ -216,4 +216,4 @@ const PRECIOS_CARRITO = [105000,52500];
 
 let totalCarrito = PRECIOS_CARRITO.reduce((acum,num)=> acum + num);
 
-console.log(totalCarrito)
+console.log(totalCarrito);
